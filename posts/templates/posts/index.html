@@ -10,7 +10,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Age Free</a>
+    <a class="navbar-brand" style="font-family: Kai" href="#">Age Free</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -19,13 +19,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" style="font-family: Kai" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">代表プロフィール</a>
+                <a class="nav-link" style="font-family: Kai" href="#">代表プロフィール</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">about</a>
+                <a class="nav-link" style="font-family: Kai" href="#">about</a>
             </li>
 
         </ul>
@@ -44,8 +44,8 @@
     <br>
 
 
-    <hr>
-    <h3 class="text-center" style="font-family: Kai">-最新の投稿-</h3>
+    <hr size="100" width="300" color="red " align="center">
+    <h3 class="text-center" style="font-family: Kai">〜New article〜</h3>
 
     {% for post in posts.all %}
 
@@ -59,6 +59,7 @@
         <h5>read</h5>
         ｢{{ post.summary }}｣...
         <br><br>
+        <hr>
     {% endfor %}
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -71,9 +72,35 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
 
+    <hr size="100" width="300" color="red " align="center">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-" style="font-family: Kai">Age is just a number</h1>
+            <p class="lead" style="font-family: Kai">年齢なんてただの数字だからね。</p>
+        </div>
+        <div class="p-3 mb-2 bg-dark text-white">.No Age</div>
+    </div>
+    <br>
+    <br>
+
+    </ol>
+    </nav>
+
+
+    </ol>
+    </nav>
+    <img src="{% static 'posts/0009.jpg' %}" style="height: 200px" alt="..." class="rounded-right">
+    <img src="{% static 'posts/0010.jpg' %}" style="height: 200px" alt="..." class="rounded-right">
+    <img src="{% static 'posts/0011.jpg' %}" style="height: 200px" alt="..." class="rounded-right">
+    <img src="{% static 'posts/0012.jpg' %}" style="height: 200px" alt="..." class="rounded-right">
 
     <br>
-    <br>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+    </nav>
     <br>
     <h4 class="text-center" style="  ;font-family: Kai">Age free @ 2018. All rights reserved.</h4>
 </div>
